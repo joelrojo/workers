@@ -1,0 +1,11 @@
+.results.row
+  .col-xs-12
+    %h2 Results for #{@hood_search.term}
+    %table.table.table-striped
+      %tr
+        %th Neighborhood
+        %th Count
+      - HoodSearch.hoods.each do |hood|
+        %tr
+          %td= hood
+          %td= @hood_search.send(hood.parameterize.underscore)

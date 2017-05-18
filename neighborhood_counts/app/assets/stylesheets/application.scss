@@ -1,0 +1,13 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#loading {
+  display: none;
+}
+.hood_searches {
+  text-align: center;
+
+  .results {
+    text-align: left;
+  }
+}

@@ -1,0 +1,11 @@
+.jumbotron
+  %h1 Neighborhood Search
+
+  = form_for :hood_search, html: { class: 'form-inline', id: 'hood-search' }, method: :get do |f|
+    .form-group
+      = f.text_field :term, class: 'form-control'
+    = f.submit "Search Hoods", class: 'btn btn-primary', name: nil
+
+%p#loading Loading Results...
+
+#results
